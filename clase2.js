@@ -1,0 +1,9 @@
+var nombre = 'Jose Ramon';
+var apellido = 'Vieites';
+var nombreEnMayuscula = nombre.toUpperCase();
+var apellidoEnMinusculas = apellido.toLowerCase();
+var primeraLetraNombre = nombre.charAt(0);
+var cantidadDeLetrasNombre = nombre.length;
+var nombreCompleto = `${nombre} ${apellido.toUpperCase()}`;
+var str = nombre.substr(1, 3);
+var ultimaLetraNombre = nombre.substr(-1);
