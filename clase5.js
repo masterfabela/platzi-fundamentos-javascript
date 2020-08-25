@@ -1,10 +1,32 @@
-var nombre = 'Sacha';
-
-function imprimirNombreEnMayusculas(nombre) {
-  nombre = nombre.toUpperCase();
-  console.log(nombre);
+class Persona {
+  /**
+   *
+   * @param {string} nombre
+   * @param {string} apellido
+   * @param {string } edad
+   */
+  constructor(nombre, apellido, edad) {
+    (this.nombre = nombre), (this.apellido = apellido), (this.edad = edad);
+  }
 }
 
-imprimirNombreEnMayusculas(nombre);
+var sacha = new Persona('Sacha', 'Lipstic', 28);
 
-console.log(nombre);
+var dario = {
+  nombre: 'Dario',
+  apellido: 'Susniki',
+  edad: 27,
+};
+
+/**
+ *
+ * @param {Persona} persona
+ */
+function imprimirNombreEnMayusculas(persona) {
+  console.log(persona.nombre.toUpperCase());
+}
+
+imprimirNombreEnMayusculas(sacha);
+imprimirNombreEnMayusculas(dario);
+
+console.log(sacha.nombre);
